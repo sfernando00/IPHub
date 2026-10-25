@@ -54,8 +54,8 @@ export default function LoginPage() {
 
     setSubmitting(true)
     try {
-      await login({ username: username.trim(), password }, remember)
-      setNotice('Signed in successfully.')
+      const { full_name } = await login({ username: username.trim(), password }, remember)
+      setNotice(`Welcome, ${full_name}! You are signed in.`)
     } catch (error) {
       setFormError(error instanceof AuthError ? error.message : 'Something went wrong. Please try again.')
     } finally {

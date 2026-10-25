@@ -6,6 +6,7 @@ export interface LoginRequest {
 export interface LoginResponse {
   access_token: string
   token_type: string
+  full_name: string
 }
 
 const TOKEN_KEY = 'iphub_token'
