@@ -1,0 +1,47 @@
+:root {
+  --green-950: #032b22;
+  --green-900: #063d30;
+  --green-800: #0b5a44;
+  --green-700: #0f6b4f;
+  --green-600: #13805e;
+  --lime-500: #6cb33f;
+  --lime-400: #8ccf55;
+
+  --ink-900: #0f2a3d;
+  --ink-700: #34495e;
+  --ink-500: #6b7c8f;
+  --ink-300: #c6d0da;
+  --ink-200: #dde4ea;
+  --surface: #ffffff;
+  --page: #f2f6f8;
+
+  --danger: #c0392b;
+  --danger-bg: #fdecea;
+  --info-bg: #e8f4ee;
+
+  font-family: 'Noto Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--ink-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--page);
+}
+
+button,
+input {
+  font: inherit;
+}
