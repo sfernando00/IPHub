@@ -1,26 +1,37 @@
+/* Theme colours are sampled from the IPHub logo. */
 :root {
-  --green-950: #032b22;
-  --green-900: #063d30;
-  --green-800: #0b5a44;
-  --green-700: #0f6b4f;
-  --green-600: #13805e;
-  --lime-500: #6cb33f;
-  --lime-400: #8ccf55;
+  --leaf: #49ae61;
+  --forest: #247d53;
+  --deep: #033f39;
+  --abyss: #022a2f;
+  --lime: #6ab03b;
+  --lime-soft: #b4e08d;
 
-  --ink-900: #0f2a3d;
-  --ink-700: #34495e;
-  --ink-500: #6b7c8f;
-  --ink-300: #c6d0da;
-  --ink-200: #dde4ea;
+  --ink: #0d2b28;
+  --ink-soft: #4d6863;
+  --ink-faint: #8aa39d;
+  --line: #d8e6df;
+  --mist: #eaf4ee;
+  --page: #f3f8f5;
   --surface: #ffffff;
-  --page: #f2f6f8;
 
-  --danger: #c0392b;
-  --danger-bg: #fdecea;
-  --info-bg: #e8f4ee;
+  --danger: #c2413a;
+  --danger-bg: #fdeeed;
+  --success-bg: #e6f5ea;
 
-  font-family: 'Noto Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  color: var(--ink-900);
+  --brand-gradient: linear-gradient(135deg, var(--leaf) 0%, var(--forest) 48%, var(--deep) 100%);
+
+  /* One family, one small type scale. */
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.5rem, 2.2vw, 1.875rem);
+  --fs-display: clamp(2.1rem, 3.4vw, 3.1rem);
+
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,8 +44,8 @@
 html,
 body,
 #root {
+  height: 100%;
   margin: 0;
-  min-height: 100%;
 }
 
 body {
@@ -44,4 +55,5 @@ body {
 button,
 input {
   font: inherit;
+  color: inherit;
 }
